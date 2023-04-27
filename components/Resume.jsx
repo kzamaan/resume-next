@@ -7,7 +7,7 @@ export default function Resume() {
                 <button
                     onClick={() => window.print()}
                     className='gradient-btn group from-purple-600 to-blue-500 focus:ring-blue-300 group-hover:from-purple-600 group-hover:to-blue-500 dark:focus:ring-blue-800'>
-                    <div className='gradient-content w-max p-2'>
+                    <div className='gradient-content w-max p-1'>
                         <svg
                             xmlns='http://www.w3.org/2000/svg'
                             width='16'
@@ -24,8 +24,8 @@ export default function Resume() {
                         </svg>
                     </div>
                 </button>
-                <button className='gradient-btn group from-purple-600 to-blue-500  focus:ring-blue-300 group-hover:from-purple-600 group-hover:to-blue-500 dark:focus:ring-blue-800'>
-                    <div className='gradient-content w-max p-2'>
+                <button className='gradient-btn group from-purple-500 to-pink-500 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500 dark:focus:ring-purple-800'>
+                    <div className='gradient-content w-max p-1'>
                         <svg
                             xmlns='http://www.w3.org/2000/svg'
                             width='16'
