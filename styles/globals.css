@@ -30,6 +30,9 @@
     .gradient-content {
         @apply relative w-40 rounded-md bg-white px-3 py-2 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900;
     }
+    .contact-icon {
+        @apply w-6 h-6 mr-4 rounded;
+    }
 }
 @tailwind utilities;
 

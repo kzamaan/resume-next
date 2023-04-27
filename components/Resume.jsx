@@ -51,29 +51,29 @@ export default function Resume() {
                     <p className='subtitle mb-4 mt-12'>Contact</p>
                     <ul className='divide-y-2'>
                         <li className='flex items-center py-2'>
-                            <Image src='/phone.png' width={24} height={24} alt='phone' />
-                            <p className='ml-4 text-sm'>+880 1716 724 245</p>
+                            <Image className='contact-icon' src='/phone.png' width={24} height={24} alt='phone' />
+                            <p className='text-sm'>+880 1716 724 245</p>
                         </li>
 
                         <li className='flex items-center py-2'>
-                            <Image src='/email.png' width={24} height={24} alt='email' />
-                            <p className='resume-link ml-4'>kzamanbn@gmail.com</p>
+                            <Image className='contact-icon' src='/email.png' width={24} height={24} alt='email' />
+                            <p className='resume-link'>kzamanbn@gmail.com</p>
                         </li>
 
                         <li className='flex items-center py-2'>
-                            <Image src='/location.png' width={24} height={24} alt='location' />
-                            <p className='ml-4 text-sm'>Tejgaon Industrial Area, 29/C & 29/D, Dhaka</p>
+                            <Image className='contact-icon' src='/location.png' width={24} height={24} alt='location' />
+                            <p className='text-sm'>Tejgaon Industrial Area, 29/C & 29/D, Dhaka</p>
                         </li>
 
                         <li className='flex items-center py-2'>
-                            <Image src='/github.png' width={24} height={24} alt='github' />
-                            <a href='https://github.com/kzamanbd' target='_blank' className='resume-link ml-4'>
+                            <Image className='contact-icon' src='/github.png' width={24} height={24} alt='github' />
+                            <a href='https://github.com/kzamanbd' target='_blank' className='resume-link'>
                                 kzamanbd
                             </a>
                         </li>
                         <li className='flex items-center py-2'>
-                            <Image src='/linkedin.png' width={24} height={24} alt='github' />
-                            <a href='https://linkedin.com/in/kzamanbd' target='_blank' className='resume-link ml-4'>
+                            <Image className='contact-icon' src='/linkedin.png' width={24} height={24} alt='github' />
+                            <a href='https://linkedin.com/in/kzamanbd' target='_blank' className='resume-link'>
                                 kzamanbd
                             </a>
                         </li>
