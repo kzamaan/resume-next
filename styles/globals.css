@@ -7,10 +7,10 @@
         @apply print:mx-0 print:my-0 print:rounded-none print:shadow-none;
     }
     .subtitle {
-        @apply font-bold text-primary print:text-gray-700;      
+        @apply font-bold text-primary print:text-gray-700;
     }
     .print-btn {
-        @apply absolute right-6 top-4 text-sm print:hidden;
+        @apply absolute right-6 top-4 text-sm print:hidden flex items-center;
     }
     .section-box {
         @apply flex h-12 items-center justify-center rounded-sm bg-primary-50;
@@ -25,10 +25,10 @@
         @apply h-1.5 w-1.5 rounded-full bg-primary;
     }
     .gradient-btn {
-        @apply relative inline-flex items-center justify-center overflow-hidden rounded bg-gradient-to-br p-0.5 text-sm font-medium text-gray-900 dark:text-white hover:text-white focus:outline-none focus:ring-4;
+        @apply print:bg-gray-100 relative flex items-center justify-center overflow-hidden rounded bg-gradient-to-br p-0.5 text-sm font-medium text-gray-900 dark:text-white hover:text-white focus:outline-none focus:ring-4;
     }
     .gradient-content {
-        @apply relative w-40 rounded-md bg-white px-3 py-2 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900;
+        @apply text-xs flex items-center relative w-40 rounded-md bg-white px-3 py-2 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900;
     }
     .contact-icon {
         @apply w-6 h-6 mr-4 rounded;

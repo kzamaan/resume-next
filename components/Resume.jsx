@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Resume() {
     return (
-        <div className='page relative'>
+        <div id='resume' className='page relative'>
             <div className='print-btn space-x-2'>
                 <button
                     onClick={() => window.print()}
@@ -43,6 +43,7 @@ export default function Resume() {
                     </div>
                 </button>
             </div>
+
             <div className='grid h-full grid-cols-10 gap-4'>
                 <div className='col-span-3 bg-gray-50 print:bg-transparent'>
                     <h1 className='text-xl font-bold'>KAMRUZZAMAN</h1>
