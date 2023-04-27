@@ -25,7 +25,7 @@
         @apply h-1.5 w-1.5 rounded-full bg-primary;
     }
     .gradient-btn {
-        @apply print:bg-gray-100 relative flex items-center justify-center overflow-hidden rounded bg-gradient-to-br p-0.5 text-sm font-medium text-gray-900 dark:text-white hover:text-white focus:outline-none focus:ring-4;
+        @apply print:bg-gray-100 relative flex items-center justify-center overflow-hidden rounded bg-gradient-to-br p-0.5 font-bold text-gray-900 dark:text-white hover:text-white focus:outline-none focus:ring-4;
     }
     .gradient-content {
         @apply text-xs flex items-center relative w-40 rounded-md bg-white px-3 py-2 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900;
