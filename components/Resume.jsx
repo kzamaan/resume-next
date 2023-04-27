@@ -103,7 +103,7 @@ export default function Resume() {
                     </ul>
 
                     {/* Education */}
-                    <p className='subtitle my-4'>Education</p>
+                    <p className='subtitle my-3'>Education</p>
                     <div className='text-sm'>
                         <div className='mb-2'>
                             <p>
@@ -116,7 +116,7 @@ export default function Resume() {
 
                         <div>
                             <p>
-                                <span className='font-bold'>Diploma IN CSE </span>
+                                <span className='font-bold'>Diploma In CSE </span>
                                 <span>(3.31) - 2019</span>
                             </p>
                             <p className='italic'>Rumdo Institute of Modern Technology.</p>
@@ -124,7 +124,7 @@ export default function Resume() {
                         </div>
                     </div>
                     {/* Key Skills */}
-                    <p className='subtitle my-4'>Key Skills</p>
+                    <p className='subtitle my-3'>Key Skills</p>
                     <div className='space-y-4'>
                         <button className='gradient-btn group from-purple-500 to-pink-500 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500 dark:focus:ring-purple-800'>
                             <span className='gradient-content'>PHP/Laravel</span>
@@ -140,7 +140,7 @@ export default function Resume() {
                         </button>
                     </div>
                     {/* Training */}
-                    <p className='subtitle my-4'>Training</p>
+                    <p className='subtitle my-3'>Training</p>
                     <div className='space-y-2 text-sm'>
                         <div>
                             <p className='font-bold'>PHP/Laravel (2019)</p>
