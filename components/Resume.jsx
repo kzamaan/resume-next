@@ -1,12 +1,34 @@
+import html2canvas from 'html2canvas';
+import { jsPDF } from 'jspdf';
 import Image from 'next/image';
+import { useRef } from 'react';
 
 export default function Resume() {
+    const leftContent = useRef(null);
+    const rightContent = useRef(null);
+    const printDocument = () => {
+        const printBtn = document.querySelector('.export-btn');
+        const resume = document.getElementById('resume');
+
+        printBtn.classList.add('hidden');
+        leftContent.current.classList.remove('bg-gray-50');
+        rightContent.current.classList.remove('bg-gray-50');
+
+        html2canvas(resume).then(canvas => {
+            const imgData = canvas.toDataURL('image/png');
+            const pdf = new jsPDF();
+            pdf.addImage(imgData, 'PNG', 0, 0);
+            pdf.save('KAMRUZZAMAN.pdf');
+
+            printBtn.classList.remove('hidden');
+            leftContent.current.classList.add('bg-gray-50');
+            rightContent.current.classList.add('bg-gray-50');
+        });
+    };
     return (
-        <div className='page relative'>
-            <div className='print-btn space-x-2'>
-                <button
-                    onClick={() => window.print()}
-                    className='gradient-btn group from-purple-600 to-blue-500 focus:ring-blue-300 group-hover:from-purple-600 group-hover:to-blue-500 dark:focus:ring-blue-800'>
+        <div id='resume' className='page relative'>
+            <div className='export-btn space-x-2'>
+                <button onClick={() => window.print()} className='gradient-btn print-btn group'>
                     <div className='gradient-content w-max p-1'>
                         <svg
                             xmlns='http://www.w3.org/2000/svg'
@@ -24,7 +46,7 @@ export default function Resume() {
                         </svg>
                     </div>
                 </button>
-                <button className='gradient-btn group from-purple-500 to-pink-500 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500 dark:focus:ring-purple-800'>
+                <button onClick={printDocument} className='gradient-btn download-btn group'>
                     <div className='gradient-content w-max p-1'>
                         <svg
                             xmlns='http://www.w3.org/2000/svg'
@@ -45,7 +67,7 @@ export default function Resume() {
             </div>
 
             <div className='grid h-full grid-cols-10 gap-4'>
-                <div className='col-span-3 bg-gray-50 print:bg-transparent'>
+                <div ref={leftContent} className='col-span-3 bg-gray-50 print:bg-transparent'>
                     <h1 className='text-xl font-bold'>KAMRUZZAMAN</h1>
                     <p className='subtitle'>Software Engineer</p>
                     {/* contact info */}
@@ -104,7 +126,7 @@ export default function Resume() {
                     {/* Key Skills */}
                     <p className='subtitle my-4'>Key Skills</p>
                     <div className='space-y-4'>
-                        <button className='gradient-btn group from-purple-600 to-blue-500 focus:ring-blue-300 group-hover:from-purple-600 group-hover:to-blue-500 dark:focus:ring-blue-800'>
+                        <button className='gradient-btn group from-purple-500 to-pink-500 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500 dark:focus:ring-purple-800'>
                             <span className='gradient-content'>PHP/Laravel</span>
                         </button>
                         <button className='gradient-btn group from-cyan-500 to-blue-500 focus:ring-cyan-200 group-hover:from-cyan-500 group-hover:to-blue-500 dark:focus:ring-cyan-800'>
@@ -113,7 +135,7 @@ export default function Resume() {
                         <button className='gradient-btn group from-green-400 to-blue-600 focus:ring-green-200 group-hover:from-green-400 group-hover:to-blue-600 dark:focus:ring-green-800'>
                             <span className='gradient-content'>VueJS/Nuxt/Vuex</span>
                         </button>
-                        <button className='gradient-btn group from-purple-500 to-pink-500 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500 dark:focus:ring-purple-800'>
+                        <button className='gradient-btn group from-purple-600 to-blue-500 focus:ring-blue-300 group-hover:from-purple-600 group-hover:to-blue-500 dark:focus:ring-blue-800'>
                             <span className='gradient-content'>React/Next/Redux</span>
                         </button>
                     </div>
@@ -130,7 +152,7 @@ export default function Resume() {
                         </div>
                     </div>
                 </div>
-                <div className='col-span-7 bg-gray-50 text-justify print:bg-transparent'>
+                <div ref={rightContent} className='col-span-7 bg-gray-50 text-justify print:bg-transparent'>
                     <p className='subtitle'>Profile</p>
 
                     <p className='mb-4 mt-2 text-sm'>

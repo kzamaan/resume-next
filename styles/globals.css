@@ -9,8 +9,14 @@
     .subtitle {
         @apply font-bold text-primary print:text-gray-700;
     }
-    .print-btn {
+    .export-btn {
         @apply absolute right-6 top-4 text-sm print:hidden flex items-center;
+    }
+    .print-btn {
+        @apply from-purple-600 to-blue-500 focus:ring-blue-300 group-hover:from-purple-600 group-hover:to-blue-500 dark:focus:ring-blue-800;
+    }
+    .download-btn {
+        @apply from-purple-500 to-pink-500 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500 dark:focus:ring-purple-800;
     }
     .section-box {
         @apply flex h-12 items-center justify-center rounded-sm bg-primary-50;
