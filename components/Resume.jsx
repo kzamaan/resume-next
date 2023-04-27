@@ -126,16 +126,16 @@ export default function Resume() {
                     {/* Key Skills */}
                     <p className='subtitle my-3'>Key Skills</p>
                     <div className='space-y-4'>
-                        <button className='gradient-btn group from-purple-500 to-pink-500 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500 dark:focus:ring-purple-800'>
+                        <button className='gradient-btn group from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500'>
                             <span className='gradient-content'>PHP/Laravel</span>
                         </button>
-                        <button className='gradient-btn group from-cyan-500 to-blue-500 focus:ring-cyan-200 group-hover:from-cyan-500 group-hover:to-blue-500 dark:focus:ring-cyan-800'>
+                        <button className='gradient-btn group from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500'>
                             <span className='gradient-content'>Node.js/Express</span>
                         </button>
-                        <button className='gradient-btn group from-green-400 to-blue-600 focus:ring-green-200 group-hover:from-green-400 group-hover:to-blue-600 dark:focus:ring-green-800'>
+                        <button className='gradient-btn group from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600'>
                             <span className='gradient-content'>VueJS/Nuxt/Vuex</span>
                         </button>
-                        <button className='gradient-btn group from-purple-600 to-blue-500 focus:ring-blue-300 group-hover:from-purple-600 group-hover:to-blue-500 dark:focus:ring-blue-800'>
+                        <button className='gradient-btn group from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500'>
                             <span className='gradient-content'>React/Next/Redux</span>
                         </button>
                     </div>

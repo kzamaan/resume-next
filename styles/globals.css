@@ -13,10 +13,10 @@
         @apply absolute right-6 top-4 text-sm print:hidden flex items-center;
     }
     .print-btn {
-        @apply from-purple-600 to-blue-500 focus:ring-blue-300 group-hover:from-purple-600 group-hover:to-blue-500 dark:focus:ring-blue-800;
+        @apply focus:ring-4 from-purple-600 to-blue-500 focus:ring-blue-300 group-hover:from-purple-600 group-hover:to-blue-500 dark:focus:ring-blue-800 !important;
     }
     .download-btn {
-        @apply from-purple-500 to-pink-500 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500 dark:focus:ring-purple-800;
+        @apply focus:ring-4 from-purple-500 to-pink-500 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500 dark:focus:ring-purple-800 !important;
     }
     .section-box {
         @apply flex h-12 items-center justify-center rounded-sm bg-primary-50;
@@ -31,10 +31,10 @@
         @apply h-1.5 w-1.5 rounded-full bg-primary;
     }
     .gradient-btn {
-        @apply print:bg-gray-100 relative flex items-center justify-center overflow-hidden rounded bg-gradient-to-br p-0.5 font-bold text-gray-900 dark:text-white hover:text-white focus:outline-none focus:ring-4;
+        @apply print:bg-gray-100 relative flex items-center justify-center overflow-hidden rounded bg-gradient-to-br p-0.5 font-bold text-gray-900 dark:text-white hover:text-white focus:outline-none focus:ring-0;
     }
     .gradient-content {
-        @apply text-xs flex items-center relative w-32 rounded-md bg-white px-3 py-2 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900;
+        @apply text-xs flex items-center w-32 rounded-md bg-white px-3 py-2 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900;
     }
     .contact-icon {
         @apply w-6 h-6 mr-4 rounded;
