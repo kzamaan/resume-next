@@ -4,37 +4,43 @@ export default function Resume() {
     return (
         <div className='page relative'>
             <div className='print-btn space-x-2'>
-                <button onClick={() => window.print()} className='rounded bg-gray-100 p-2'>
-                    <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        width='16'
-                        height='16'
-                        viewBox='0 0 24 24'
-                        fill='none'
-                        stroke='currentColor'
-                        strokeWidth='2'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'>
-                        <polyline points='6 9 6 2 18 2 18 9'></polyline>
-                        <path d='M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2'></path>
-                        <rect x='6' y='14' width='12' height='8'></rect>
-                    </svg>
+                <button
+                    onClick={() => window.print()}
+                    className='gradient-btn group from-purple-600 to-blue-500 focus:ring-blue-300 group-hover:from-purple-600 group-hover:to-blue-500 dark:focus:ring-blue-800'>
+                    <div className='gradient-content w-max p-2'>
+                        <svg
+                            xmlns='http://www.w3.org/2000/svg'
+                            width='16'
+                            height='16'
+                            viewBox='0 0 24 24'
+                            fill='none'
+                            stroke='currentColor'
+                            strokeWidth='2'
+                            strokeLinecap='round'
+                            strokeLinejoin='round'>
+                            <polyline points='6 9 6 2 18 2 18 9'></polyline>
+                            <path d='M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2'></path>
+                            <rect x='6' y='14' width='12' height='8'></rect>
+                        </svg>
+                    </div>
                 </button>
-                <button className='rounded bg-gray-100 p-2'>
-                    <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        width='16'
-                        height='16'
-                        viewBox='0 0 24 24'
-                        fill='none'
-                        stroke='currentColor'
-                        strokeWidth='2'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'>
-                        <path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4'></path>
-                        <polyline points='7 10 12 15 17 10'></polyline>
-                        <line x1='12' y1='15' x2='12' y2='3'></line>
-                    </svg>
+                <button className='gradient-btn group from-purple-600 to-blue-500  focus:ring-blue-300 group-hover:from-purple-600 group-hover:to-blue-500 dark:focus:ring-blue-800'>
+                    <div className='gradient-content w-max p-2'>
+                        <svg
+                            xmlns='http://www.w3.org/2000/svg'
+                            width='16'
+                            height='16'
+                            viewBox='0 0 24 24'
+                            fill='none'
+                            stroke='currentColor'
+                            strokeWidth='2'
+                            strokeLinecap='round'
+                            strokeLinejoin='round'>
+                            <path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4'></path>
+                            <polyline points='7 10 12 15 17 10'></polyline>
+                            <line x1='12' y1='15' x2='12' y2='3'></line>
+                        </svg>
+                    </div>
                 </button>
             </div>
             <div className='grid h-full grid-cols-10 gap-4'>
@@ -98,24 +104,16 @@ export default function Resume() {
                     <p className='subtitle my-4'>Key Skills</p>
                     <div className='space-y-4'>
                         <button className='gradient-btn group from-purple-600 to-blue-500 focus:ring-blue-300 group-hover:from-purple-600 group-hover:to-blue-500 dark:focus:ring-blue-800'>
-                            <span className='gradient-content'>
-                                PHP/Laravel
-                            </span>
+                            <span className='gradient-content'>PHP/Laravel</span>
                         </button>
                         <button className='gradient-btn group from-cyan-500 to-blue-500 focus:ring-cyan-200 group-hover:from-cyan-500 group-hover:to-blue-500 dark:focus:ring-cyan-800'>
-                            <span className='gradient-content'>
-                                Node.js/Express
-                            </span>
+                            <span className='gradient-content'>Node.js/Express</span>
                         </button>
                         <button className='gradient-btn group from-green-400 to-blue-600 focus:ring-green-200 group-hover:from-green-400 group-hover:to-blue-600 dark:focus:ring-green-800'>
-                            <span className='gradient-content'>
-                                VueJS/Nuxt/Vuex
-                            </span>
+                            <span className='gradient-content'>VueJS/Nuxt/Vuex</span>
                         </button>
                         <button className='gradient-btn group from-purple-500 to-pink-500 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500 dark:focus:ring-purple-800'>
-                            <span className='gradient-content'>
-                                React/Next/Redux
-                            </span>
+                            <span className='gradient-content'>React/Next/Redux</span>
                         </button>
                     </div>
                     {/* Training */}
