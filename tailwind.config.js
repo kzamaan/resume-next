@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors');
+const primary = colors.sky;
 
 module.exports = {
     content: [
@@ -19,6 +20,9 @@ module.exports = {
                 },
                 primary: {
                     DEFAULT: '#009EF7',
+                    50: primary[50],
+                    100: primary[100],
+                    200: primary[200],
                 },
                 info: {
                     light: colors.blue[50],

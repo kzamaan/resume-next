@@ -3,15 +3,46 @@ import Image from 'next/image';
 export default function Resume() {
     return (
         <div className='page relative'>
-            <button className='print-btn' onClick={() => window.print()}>
-                Print
-            </button>
+            <div className='print-btn space-x-2'>
+                <button onClick={() => window.print()} className='rounded bg-gray-100 p-2'>
+                    <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        width='16'
+                        height='16'
+                        viewBox='0 0 24 24'
+                        fill='none'
+                        stroke='currentColor'
+                        strokeWidth='2'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'>
+                        <polyline points='6 9 6 2 18 2 18 9'></polyline>
+                        <path d='M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2'></path>
+                        <rect x='6' y='14' width='12' height='8'></rect>
+                    </svg>
+                </button>
+                <button className='rounded bg-gray-100 p-2'>
+                    <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        width='16'
+                        height='16'
+                        viewBox='0 0 24 24'
+                        fill='none'
+                        stroke='currentColor'
+                        strokeWidth='2'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'>
+                        <path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4'></path>
+                        <polyline points='7 10 12 15 17 10'></polyline>
+                        <line x1='12' y1='15' x2='12' y2='3'></line>
+                    </svg>
+                </button>
+            </div>
             <div className='grid h-full grid-cols-10 gap-4'>
                 <div className='col-span-3 bg-gray-50 print:bg-transparent'>
                     <h1 className='text-xl font-bold'>KAMRUZZAMAN</h1>
                     <p className='subtitle'>Software Engineer</p>
                     {/* contact info */}
-                    <p className='subtitle mb-4 mt-14'>Contact</p>
+                    <p className='subtitle mb-4 mt-12'>Contact</p>
                     <ul className='divide-y-2'>
                         <li className='flex items-center py-2'>
                             <Image src='/phone.png' width={24} height={24} alt='phone' />
@@ -20,7 +51,7 @@ export default function Resume() {
 
                         <li className='flex items-center py-2'>
                             <Image src='/email.png' width={24} height={24} alt='email' />
-                            <p className='ml-4 text-sm'>kzamanbn@gmail.com</p>
+                            <p className='resume-link ml-4'>kzamanbn@gmail.com</p>
                         </li>
 
                         <li className='flex items-center py-2'>
@@ -30,7 +61,15 @@ export default function Resume() {
 
                         <li className='flex items-center py-2'>
                             <Image src='/github.png' width={24} height={24} alt='github' />
-                            <p className='ml-4 text-sm'>github.com/kzamanbd</p>
+                            <a href='https://github.com/kzamanbd' target='_blank' className='resume-link ml-4'>
+                                kzamanbd
+                            </a>
+                        </li>
+                        <li className='flex items-center py-2'>
+                            <Image src='/linkedin.png' width={24} height={24} alt='github' />
+                            <a href='https://linkedin.com/in/kzamanbd' target='_blank' className='resume-link ml-4'>
+                                kzamanbd
+                            </a>
                         </li>
                     </ul>
 
@@ -58,23 +97,23 @@ export default function Resume() {
                     {/* Key Skills */}
                     <p className='subtitle my-4'>Key Skills</p>
                     <div className='space-y-4'>
-                        <button className='group relative inline-flex items-center justify-center overflow-hidden rounded bg-gradient-to-br from-purple-600 to-blue-500 p-0.5 text-sm font-medium text-gray-900 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-300 group-hover:from-purple-600 group-hover:to-blue-500 dark:text-white dark:focus:ring-blue-800'>
-                            <span className='relative w-40 rounded-md bg-white px-3 py-2 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900'>
+                        <button className='gradient-btn group from-purple-600 to-blue-500 focus:ring-blue-300 group-hover:from-purple-600 group-hover:to-blue-500 dark:focus:ring-blue-800'>
+                            <span className='gradient-content'>
                                 PHP/Laravel
                             </span>
                         </button>
-                        <button className='group relative inline-flex items-center justify-center overflow-hidden rounded bg-gradient-to-br from-cyan-500 to-blue-500 p-0.5 text-sm font-medium text-gray-900 hover:text-white focus:outline-none focus:ring-4 focus:ring-cyan-200 group-hover:from-cyan-500 group-hover:to-blue-500 dark:text-white dark:focus:ring-cyan-800'>
-                            <span className='relative w-40 rounded-md bg-white px-3 py-2 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900'>
+                        <button className='gradient-btn group from-cyan-500 to-blue-500 focus:ring-cyan-200 group-hover:from-cyan-500 group-hover:to-blue-500 dark:focus:ring-cyan-800'>
+                            <span className='gradient-content'>
                                 Node.js/Express
                             </span>
                         </button>
-                        <button className='group relative inline-flex items-center justify-center overflow-hidden rounded bg-gradient-to-br from-green-400 to-blue-600 p-0.5 text-sm font-medium text-gray-900 hover:text-white focus:outline-none focus:ring-4 focus:ring-green-200 group-hover:from-green-400 group-hover:to-blue-600 dark:text-white dark:focus:ring-green-800'>
-                            <span className='relative w-40 rounded-md bg-white px-3 py-2 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900'>
+                        <button className='gradient-btn group from-green-400 to-blue-600 focus:ring-green-200 group-hover:from-green-400 group-hover:to-blue-600 dark:focus:ring-green-800'>
+                            <span className='gradient-content'>
                                 VueJS/Nuxt/Vuex
                             </span>
                         </button>
-                        <button className='group relative inline-flex items-center justify-center overflow-hidden rounded bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-sm font-medium text-gray-900 hover:text-white focus:outline-none focus:ring-4 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500 dark:text-white dark:focus:ring-purple-800'>
-                            <span className='relative w-40 rounded-md bg-white px-3 py-2 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900'>
+                        <button className='gradient-btn group from-purple-500 to-pink-500 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500 dark:focus:ring-purple-800'>
+                            <span className='gradient-content'>
                                 React/Next/Redux
                             </span>
                         </button>
@@ -93,7 +132,7 @@ export default function Resume() {
                     </div>
                 </div>
                 <div className='col-span-7 bg-gray-50 text-justify print:bg-transparent'>
-                    <p className='font-bold text-primary'>Profile</p>
+                    <p className='subtitle'>Profile</p>
 
                     <p className='mb-4 mt-2 text-sm'>
                         Over two years of experience building web applications, updating existing web applications, and
@@ -112,7 +151,9 @@ export default function Resume() {
                                 <p className='text-sm font-bold'>Jun 2021 - Present</p>
                             </div>
                             <div className='col-span-3 flex flex-col justify-center text-xs'>
-                                <p className='text-primary underline'>https://mononsoft.org</p>
+                                <a href='https://mononsoft.org' target='_blank' className='resume-link'>
+                                    https://mononsoft.org
+                                </a>
                                 <p>TMC Building (6th Floor), 52 New Eskaton Road, Dhaka 1000.</p>
                             </div>
                         </div>
@@ -120,40 +161,40 @@ export default function Resume() {
                             <span className='font-bold'>Software Engineer</span>
                             <span className='ml-2 text-sm'>at MononSoft Ltd. (A Sister Concern of JMI Group)</span>
                         </p>
-                        <ul className='mt-2 space-y-1.5 text-xs'>
+                        <ul className='bullet-list'>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
-                                    <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
+                                    <div className='bullet'></div>
                                 </div>
                                 <p>Developing an ERP system based on Laravel, Vue.js and React.js.</p>
                             </li>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
-                                    <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
+                                    <div className='bullet'></div>
                                 </div>
                                 <p>Developing software solutions to meet customer needs.</p>
                             </li>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
-                                    <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
+                                    <div className='bullet'></div>
                                 </div>
                                 <p>Creating and implementing the source code of new applications.</p>
                             </li>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
-                                    <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
+                                    <div className='bullet'></div>
                                 </div>
                                 <p>Testing source code and debugging code.</p>
                             </li>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
-                                    <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
+                                    <div className='bullet'></div>
                                 </div>
                                 <p>Evaluating existing applications and performing updates and modifications.</p>
                             </li>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
-                                    <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
+                                    <div className='bullet'></div>
                                 </div>
                                 <p>
                                     Developing technical handbooks to represent the design and code of new applications.
@@ -168,7 +209,9 @@ export default function Resume() {
                                 <p className='text-sm font-bold'>Aug 2020 – Jun 2021</p>
                             </div>
                             <div className='col-span-3 flex flex-col justify-center text-xs'>
-                                <p className='text-primary underline'>https://maxsop.com</p>
+                                <a href='https://maxsop.com' target='_blank' className='resume-link'>
+                                    https://maxsop.com
+                                </a>
                                 <p>27/2 Ram Babu Road, Mymensingh – 2200</p>
                             </div>
                         </div>
@@ -176,28 +219,28 @@ export default function Resume() {
                             <span className='font-bold'>Junior Software Engineer </span>
                             <span className='ml-2 text-sm'>at MaxSOP </span>
                         </p>
-                        <ul className='mt-2 space-y-1.5 text-xs'>
+                        <ul className='bullet-list'>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
-                                    <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
+                                    <div className='bullet'></div>
                                 </div>
                                 <p>Developing web applications based on PHP frameworks - Laravel, Vue JS.</p>
                             </li>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
-                                    <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
+                                    <div className='bullet'></div>
                                 </div>
                                 <p>Build efficient, testable & reusable codes. Modify existing code as needed.</p>
                             </li>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
-                                    <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
+                                    <div className='bullet'></div>
                                 </div>
                                 <p>Executed and monitored standards for user interfaces page design and development.</p>
                             </li>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
-                                    <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
+                                    <div className='bullet'></div>
                                 </div>
                                 <p>Perform other operational tasks based on {`"as and when required"`}.</p>
                             </li>
@@ -212,33 +255,48 @@ export default function Resume() {
                                 <p className='text-sm font-bold'>Additional Skills</p>
                             </div>
                         </div>
-                        <ul className='mt-2 space-y-1.5 text-xs'>
+                        <ul className='bullet-list'>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
-                                    <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
+                                    <div className='bullet'></div>
                                 </div>
                                 <p>Good Knowledge on Web Services likes REST/JSON/XML APIs.</p>
                             </li>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
-                                    <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
+                                    <div className='bullet'></div>
                                 </div>
-                                <p>
-                                    HTML, CSS, Bootstrap, Tailwind, Livewire and Alpine.js, Docker, Kubernetes, CI/CD
-                                    and Github Action
-                                </p>
+                                <p>HTML, CSS, Bootstrap, Tailwind CSS, Livewire and Alpine.js.</p>
                             </li>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
-                                    <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
+                                    <div className='bullet'></div>
                                 </div>
-                                <p>Proficient Understanding of Code Versioning Tools (Git).</p>
+                                <p>Proficient Understanding of Code Versioning Tools (Git) CI/CD and Github Action.</p>
                             </li>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
-                                    <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
+                                    <div className='bullet'></div>
                                 </div>
-                                <p>Basic Knowledge of Android Apps Development.</p>
+                                <p>Familiarity with DevOps processes and tools (Docker, Kubernetes).</p>
+                            </li>
+                            <li className='flex items-center'>
+                                <div className='mr-4'>
+                                    <div className='bullet'></div>
+                                </div>
+                                <p>Knowledge of Linux or other Unix-based systems.</p>
+                            </li>
+                            <li className='flex items-center'>
+                                <div className='mr-4'>
+                                    <div className='bullet'></div>
+                                </div>
+                                <p>Ability to work individually and independently with minimal supervision.</p>
+                            </li>
+                            <li className='flex items-center'>
+                                <div className='mr-4'>
+                                    <div className='bullet'></div>
+                                </div>
+                                <p>Self-managed, independent, initiative and proactive.</p>
                             </li>
                         </ul>
                     </div>
