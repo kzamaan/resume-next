@@ -9,6 +9,12 @@
     .subtitle {
         @apply text-sm font-bold text-primary;
     }
+    .print-btn {
+        @apply absolute right-6 top-4 rounded bg-gray-100 px-2 py-1 text-sm print:hidden;
+    }
+    .section-box {
+        @apply flex h-14 items-center justify-center rounded bg-gray-100;
+    }
 }
 @tailwind utilities;
 

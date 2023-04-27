@@ -3,13 +3,11 @@ import Image from 'next/image';
 export default function Resume() {
     return (
         <div className='page relative'>
-            <button
-                className='absolute right-6 top-4 rounded bg-gray-100 px-2 py-1 text-sm print:hidden'
-                onClick={() => window.print()}>
+            <button className='print-btn' onClick={() => window.print()}>
                 Print
             </button>
             <div className='grid h-full grid-cols-10 gap-4'>
-                <div className='col-span-3 bg-gray-50'>
+                <div className='col-span-3 bg-gray-50 print:bg-transparent'>
                     <h1 className='text-xl font-bold'>KAMRUZZAMAN</h1>
                     <p className='subtitle'>Software Engineer</p>
                     {/* contact info */}
@@ -94,7 +92,7 @@ export default function Resume() {
                         </div>
                     </div>
                 </div>
-                <div className='col-span-7 bg-gray-50 text-justify'>
+                <div className='col-span-7 bg-gray-50 text-justify print:bg-transparent'>
                     <p className='font-bold text-primary'>Profile</p>
 
                     <p className='mb-4 mt-2 text-sm'>
@@ -110,7 +108,7 @@ export default function Resume() {
                     <div className='mb-4'>
                         {/* last job Experience */}
                         <div className='grid grid-cols-5 gap-16'>
-                            <div className='col-span-2 flex h-14 items-center justify-center rounded bg-gray-100'>
+                            <div className='section-box col-span-2'>
                                 <p className='text-sm font-bold'>Jun 2021 - Present</p>
                             </div>
                             <div className='col-span-3 flex flex-col justify-center text-xs'>
@@ -122,57 +120,51 @@ export default function Resume() {
                             <span className='font-bold'>Software Engineer</span>
                             <span className='ml-2 text-sm'>at MononSoft Ltd. (A Sister Concern of JMI Group)</span>
                         </p>
-                        <ul className='mt-2 space-y-1.5'>
+                        <ul className='mt-2 space-y-1.5 text-xs'>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
                                     <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
                                 </div>
-                                <p className='text-sm'>
-                                    Developing an ERP system based on Laravel, Vue.js and React.js.
-                                </p>
+                                <p>Developing an ERP system based on Laravel, Vue.js and React.js.</p>
                             </li>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
                                     <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
                                 </div>
-                                <p className='text-sm'>Developing software solutions to meet customer needs.</p>
+                                <p>Developing software solutions to meet customer needs.</p>
                             </li>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
                                     <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
                                 </div>
-                                <p className='text-sm'>
-                                    Creating and implementing the source code of new applications.
-                                </p>
+                                <p>Creating and implementing the source code of new applications.</p>
                             </li>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
                                     <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
                                 </div>
-                                <p className='text-sm'>Testing source code and debugging code.</p>
+                                <p>Testing source code and debugging code.</p>
                             </li>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
                                     <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
                                 </div>
-                                <p className='text-sm'>
-                                    Evaluating existing applications and performing updates and modifications.
-                                </p>
+                                <p>Evaluating existing applications and performing updates and modifications.</p>
                             </li>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
                                     <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
                                 </div>
-                                <p className='text-sm'>
+                                <p>
                                     Developing technical handbooks to represent the design and code of new applications.
                                 </p>
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div className='mb-4'>
                         {/* last job Experience */}
                         <div className='grid grid-cols-5 gap-16'>
-                            <div className='col-span-2 flex h-14 items-center justify-center rounded bg-gray-100'>
+                            <div className='section-box col-span-2'>
                                 <p className='text-sm font-bold'>Aug 2020 – Jun 2021</p>
                             </div>
                             <div className='col-span-3 flex flex-col justify-center text-xs'>
@@ -184,38 +176,69 @@ export default function Resume() {
                             <span className='font-bold'>Junior Software Engineer </span>
                             <span className='ml-2 text-sm'>at MaxSOP </span>
                         </p>
-                        <ul className='mt-2 space-y-1.5'>
+                        <ul className='mt-2 space-y-1.5 text-xs'>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
                                     <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
                                 </div>
-                                <p className='text-sm'>
-                                    Developing web applications based on PHP frameworks - Laravel, Vue JS.
+                                <p>Developing web applications based on PHP frameworks - Laravel, Vue JS.</p>
+                            </li>
+                            <li className='flex items-center'>
+                                <div className='mr-4'>
+                                    <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
+                                </div>
+                                <p>Build efficient, testable & reusable codes. Modify existing code as needed.</p>
+                            </li>
+                            <li className='flex items-center'>
+                                <div className='mr-4'>
+                                    <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
+                                </div>
+                                <p>Executed and monitored standards for user interfaces page design and development.</p>
+                            </li>
+                            <li className='flex items-center'>
+                                <div className='mr-4'>
+                                    <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
+                                </div>
+                                <p>Perform other operational tasks based on {`"as and when required"`}.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    {/* Additional Skills */}
+                    <div>
+                        {/* last job Experience */}
+                        <div className='grid grid-cols-5 gap-16'>
+                            <div className='section-box col-span-2'>
+                                <p className='text-sm font-bold'>Additional Skills</p>
+                            </div>
+                        </div>
+                        <ul className='mt-2 space-y-1.5 text-xs'>
+                            <li className='flex items-center'>
+                                <div className='mr-4'>
+                                    <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
+                                </div>
+                                <p>Good Knowledge on Web Services likes REST/JSON/XML APIs.</p>
+                            </li>
+                            <li className='flex items-center'>
+                                <div className='mr-4'>
+                                    <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
+                                </div>
+                                <p>
+                                    HTML, CSS, Bootstrap, Tailwind, Livewire and Alpine.js, Docker, Kubernetes, CI/CD
+                                    and Github Action
                                 </p>
                             </li>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
                                     <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
                                 </div>
-                                <p className='text-sm'>
-                                    Build efficient, testable & reusable codes. Modify existing code as needed.
-                                </p>
+                                <p>Proficient Understanding of Code Versioning Tools (Git).</p>
                             </li>
                             <li className='flex items-center'>
                                 <div className='mr-4'>
                                     <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
                                 </div>
-                                <p className='text-sm'>
-                                    Executed and monitored standards for user interfaces page design and development.
-                                </p>
-                            </li>
-                            <li className='flex items-center'>
-                                <div className='mr-4'>
-                                    <div className='h-1.5 w-1.5 rounded-full bg-primary'></div>
-                                </div>
-                                <p className='text-sm'>
-                                    Perform other operational tasks based on {`"as and when required"`}.
-                                </p>
+                                <p>Basic Knowledge of Android Apps Development.</p>
                             </li>
                         </ul>
                     </div>
