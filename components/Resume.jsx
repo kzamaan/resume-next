@@ -1,18 +1,13 @@
 import html2canvas from 'html2canvas';
 import { jsPDF } from 'jspdf';
 import Image from 'next/image';
-import { useRef } from 'react';
 
 export default function Resume() {
-    const leftContent = useRef(null);
-    const rightContent = useRef(null);
     const printDocument = () => {
         const printBtn = document.querySelector('.export-btn');
         const resume = document.getElementById('resume');
 
         printBtn.classList.add('hidden');
-        leftContent.current.classList.remove('bg-gray-50');
-        rightContent.current.classList.remove('bg-gray-50');
 
         html2canvas(resume).then(canvas => {
             const imgData = canvas.toDataURL('image/png');
@@ -21,13 +16,11 @@ export default function Resume() {
             pdf.save('KAMRUZZAMAN.pdf');
 
             printBtn.classList.remove('hidden');
-            leftContent.current.classList.add('bg-gray-50');
-            rightContent.current.classList.add('bg-gray-50');
         });
     };
     return (
-        <div id='resume' className='page relative'>
-            <div className='export-btn space-x-2'>
+        <div id='resume' className='page'>
+            <div className='export-btn'>
                 <button onClick={() => window.print()} className='gradient-btn print-btn group'>
                     <div className='gradient-content w-max p-1'>
                         <svg
@@ -66,8 +59,8 @@ export default function Resume() {
                 </button>
             </div>
 
-            <div className='grid h-full grid-cols-10 gap-4'>
-                <div ref={leftContent} className='col-span-3 bg-gray-50 print:bg-transparent'>
+            <div className='resume-box'>
+                <div className='left-box'>
                     <h1 className='text-xl font-bold'>KAMRUZZAMAN</h1>
                     <p className='subtitle'>Software Engineer</p>
                     {/* contact info */}
@@ -152,7 +145,7 @@ export default function Resume() {
                         </div>
                     </div>
                 </div>
-                <div ref={rightContent} className='col-span-7 bg-gray-50 text-justify print:bg-transparent'>
+                <div className='right-box'>
                     <p className='subtitle'>Profile</p>
 
                     <p className='mb-4 mt-2 text-sm'>
