@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Resume() {
     return (
-        <div id='resume' className='page relative'>
+        <div className='page relative'>
             <div className='print-btn space-x-2'>
                 <button
                     onClick={() => window.print()}
@@ -49,7 +49,7 @@ export default function Resume() {
                     <h1 className='text-xl font-bold'>KAMRUZZAMAN</h1>
                     <p className='subtitle'>Software Engineer</p>
                     {/* contact info */}
-                    <p className='subtitle mb-4 mt-12'>Contact</p>
+                    <p className='subtitle mb-2 mt-12'>Contact</p>
                     <ul className='divide-y-2'>
                         <li className='flex items-center py-2'>
                             <Image className='contact-icon' src='/phone.png' width={24} height={24} alt='phone' />
