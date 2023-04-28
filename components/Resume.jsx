@@ -106,28 +106,58 @@ export default function Resume() {
                     <p className='subtitle mb-2 mt-12'>Contact</p>
                     <ul className='divide-y-2'>
                         <li className='flex items-center py-2'>
-                            <Image className='contact-icon' src='/phone.png' width={24} height={24} alt='phone' />
+                            <Image
+                                className='contact-icon'
+                                src='/images/phone.png'
+                                width={24}
+                                height={24}
+                                alt='phone'
+                            />
                             <p className='text-sm'>+880 1716 724 245</p>
                         </li>
 
                         <li className='flex items-center py-2'>
-                            <Image className='contact-icon' src='/email.png' width={24} height={24} alt='email' />
+                            <Image
+                                className='contact-icon'
+                                src='/images/email.png'
+                                width={24}
+                                height={24}
+                                alt='email'
+                            />
                             <p className='resume-link'>kzamanbn@gmail.com</p>
                         </li>
 
                         <li className='flex items-center py-2'>
-                            <Image className='contact-icon' src='/location.png' width={24} height={24} alt='location' />
+                            <Image
+                                className='contact-icon'
+                                src='/images/location.png'
+                                width={24}
+                                height={24}
+                                alt='location'
+                            />
                             <p className='text-sm'>Tejgaon Industrial Area, 29/C & 29/D, Dhaka</p>
                         </li>
 
                         <li className='flex items-center py-2'>
-                            <Image className='contact-icon' src='/github.png' width={24} height={24} alt='github' />
+                            <Image
+                                className='contact-icon'
+                                src='/images/github.png'
+                                width={24}
+                                height={24}
+                                alt='github'
+                            />
                             <a href='https://github.com/kzamanbd' target='_blank' className='resume-link'>
                                 kzamanbd
                             </a>
                         </li>
                         <li className='flex items-center py-2'>
-                            <Image className='contact-icon' src='/linkedin.png' width={24} height={24} alt='github' />
+                            <Image
+                                className='contact-icon'
+                                src='/images/linkedin.png'
+                                width={24}
+                                height={24}
+                                alt='github'
+                            />
                             <a href='https://linkedin.com/in/kzamanbd' target='_blank' className='resume-link'>
                                 kzamanbd
                             </a>
