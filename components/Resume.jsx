@@ -101,7 +101,7 @@ export default function Resume() {
             <div className='resume-box'>
                 <div className='left-box'>
                     <h1 className='text-xl font-bold'>KAMRUZZAMAN</h1>
-                    <p className='subtitle'>Software Engineer</p>
+                    <p className='subtitle capitalize'>Software Engineer</p>
                     {/* contact info */}
                     <p className='subtitle mb-2 mt-12'>Contact</p>
                     <ul className='divide-y-2'>
@@ -185,9 +185,9 @@ export default function Resume() {
                     </div>
                 </div>
                 <div className='right-box'>
-                    <p className='subtitle'>Profile</p>
+                    <p className='subtitle'>Summary</p>
 
-                    <p className='mb-4 mt-2 text-sm'>
+                    <p className='mb-6 mt-2 text-sm'>
                         Over two years of experience building web applications, updating existing web applications, and
                         fixing bugs. I like to learn and use new technology in web development. I have worked
                         extensively on various stages of application development by creating & implementing application
@@ -255,7 +255,7 @@ export default function Resume() {
                             </li>
                         </ul>
                     </div>
-                    <div className='mb-4'>
+                    <div className='mb-6'>
                         {/* last job Experience */}
                         <div className='grid grid-cols-5 gap-16'>
                             <div className='section-box col-span-2'>
@@ -301,58 +301,52 @@ export default function Resume() {
                     </div>
 
                     {/* Additional Skills */}
-                    <div>
-                        {/* last job Experience */}
-                        <div className='grid grid-cols-5 gap-16'>
-                            <div className='section-box col-span-2'>
-                                <p className='text-sm font-bold'>Additional Skills</p>
+                    <p className='subtitle mb-4'>Additional Skills</p>
+
+                    <ul className='bullet-list'>
+                        <li className='flex items-center'>
+                            <div className='mr-4'>
+                                <div className='bullet'></div>
                             </div>
-                        </div>
-                        <ul className='bullet-list'>
-                            <li className='flex items-center'>
-                                <div className='mr-4'>
-                                    <div className='bullet'></div>
-                                </div>
-                                <p>Good Knowledge on Web Services likes REST/JSON/XML APIs.</p>
-                            </li>
-                            <li className='flex items-center'>
-                                <div className='mr-4'>
-                                    <div className='bullet'></div>
-                                </div>
-                                <p>HTML, CSS, Bootstrap, Tailwind CSS, Livewire and Alpine.js.</p>
-                            </li>
-                            <li className='flex items-center'>
-                                <div className='mr-4'>
-                                    <div className='bullet'></div>
-                                </div>
-                                <p>Proficient Understanding of Code Versioning Tools (Git) CI/CD and Github Action.</p>
-                            </li>
-                            <li className='flex items-center'>
-                                <div className='mr-4'>
-                                    <div className='bullet'></div>
-                                </div>
-                                <p>Familiarity with DevOps processes and tools (Docker, Kubernetes).</p>
-                            </li>
-                            <li className='flex items-center'>
-                                <div className='mr-4'>
-                                    <div className='bullet'></div>
-                                </div>
-                                <p>Knowledge of Linux or other Unix-based systems.</p>
-                            </li>
-                            <li className='flex items-center'>
-                                <div className='mr-4'>
-                                    <div className='bullet'></div>
-                                </div>
-                                <p>Ability to work individually and independently with minimal supervision.</p>
-                            </li>
-                            <li className='flex items-center'>
-                                <div className='mr-4'>
-                                    <div className='bullet'></div>
-                                </div>
-                                <p>Self-managed, independent, initiative and proactive.</p>
-                            </li>
-                        </ul>
-                    </div>
+                            <p>Good Knowledge on Web Services likes REST/JSON/XML APIs.</p>
+                        </li>
+                        <li className='flex items-center'>
+                            <div className='mr-4'>
+                                <div className='bullet'></div>
+                            </div>
+                            <p>HTML, CSS, Bootstrap, Tailwind CSS, Livewire and Alpine.js.</p>
+                        </li>
+                        <li className='flex items-center'>
+                            <div className='mr-4'>
+                                <div className='bullet'></div>
+                            </div>
+                            <p>Proficient Understanding of Code Versioning Tools (Git) CI/CD and Github Action.</p>
+                        </li>
+                        <li className='flex items-center'>
+                            <div className='mr-4'>
+                                <div className='bullet'></div>
+                            </div>
+                            <p>Familiarity with DevOps processes and tools (Docker, Kubernetes).</p>
+                        </li>
+                        <li className='flex items-center'>
+                            <div className='mr-4'>
+                                <div className='bullet'></div>
+                            </div>
+                            <p>Knowledge of Linux or other Unix-based systems.</p>
+                        </li>
+                        <li className='flex items-center'>
+                            <div className='mr-4'>
+                                <div className='bullet'></div>
+                            </div>
+                            <p>Ability to work individually and independently with minimal supervision.</p>
+                        </li>
+                        <li className='flex items-center'>
+                            <div className='mr-4'>
+                                <div className='bullet'></div>
+                            </div>
+                            <p>Self-managed, independent, initiative and proactive.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

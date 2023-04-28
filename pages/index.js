@@ -1,3 +1,4 @@
+import CoverLetter from '@/components/CoverLetter';
 import Resume from '@/components/Resume';
 import { Inter } from 'next/font/google';
 import Head from 'next/head';
@@ -22,6 +23,7 @@ export default function Home() {
                 />
             </Head>
             <Resume />
+            <CoverLetter />
         </main>
     );
 }
