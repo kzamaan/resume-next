@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+    resume-app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: resume-app
+        ports:
+            - "3000:3000"
+        networks:
+            - resume-network
+        volumes:
+            - resume_data:/usr/share/resume/data
+        environment:
+            - APP_NAME=Resume App
+networks:
+    resume-network:
+        driver: bridge
+volumes:
+    resume_data:
