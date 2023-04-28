@@ -169,7 +169,7 @@ export default function Resume() {
                     <div className='text-sm'>
                         <div className='mb-2'>
                             <p>
-                                <span className='font-bold'>B.SC. In CSE</span>
+                                <span className='font-bold'>B.SC. In CSE </span>
                                 <span>(Continuing)</span>
                             </p>
                             <p className='italic'>Southeast University.</p>

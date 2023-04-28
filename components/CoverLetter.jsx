@@ -6,7 +6,7 @@ export default function CoverLetter() {
                 <div className='right-box text-sm'>
                     <h1 className='subtitle mb-8 text-3xl capitalize'>Dear Hiring Manager!</h1>
 
-                    <div className='mt-2 space-y-4 '>
+                    <div className='mt-2 space-y-4'>
                         <p> I’m interested in the job that you posted.</p>
                         <p>
                             I have read out the job post, and all the requirements that you have asked for the job, have
@@ -21,7 +21,7 @@ export default function CoverLetter() {
                         <p>
                             My skills and experience in designing and developing applications will be of great benefit
                             to your job. I’d love to discuss the further role with you. I have attached my resume,
-                            please have look whenever you want.
+                            please have at look whenever you want.
                         </p>
                     </div>
 
