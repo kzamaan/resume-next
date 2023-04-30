@@ -146,8 +146,8 @@ export default function Resume() {
                                 height={24}
                                 alt='github'
                             />
-                            <a href='https://github.com/kzamanbd' target='_blank' className='resume-link'>
-                                kzamanbd
+                            <a href='https://github.com/kzamaan' target='_blank' className='resume-link'>
+                                kzamaan
                             </a>
                         </li>
                         <li className='flex items-center py-2'>
