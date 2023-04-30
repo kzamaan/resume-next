@@ -35,14 +35,14 @@ export default function App({ Component, pageProps }) {
                 <meta name='twitter:url' content='https://kzaman.vercel.app' />
                 <meta name='twitter:title' content='PWA App' />
                 <meta name='twitter:description' content={description} />
-                <meta name='twitter:image' content='https://kzaman.vercel.app/icons/android-chrome-192x192.png' />
+                <meta name='twitter:image' content='/images/icons/android-chrome-192x192.png' />
                 <meta name='twitter:creator' content='@kzaman' />
-                <meta property='og:type' content='website' />
                 <meta name='title' property='og:title' content='KAMRUZZAMAN' key='title' />
                 <meta name='description' property='og:description' content={description} key='desc' />
-                <meta property='og:site_name' content='PWA App' />
+                <meta property='og:type' content='website' />
+                <meta property='og:site_name' content='KAMRUZZAMAN' />
                 <meta property='og:url' content='https://kzaman.vercel.app' />
-                <meta property='og:image' content='https://kzaman.vercel.app/icons/apple-touch-icon.png' />
+                <meta property='og:image' content='/images/icons/android-chrome-192x192.png' />
             </Head>
             <Component {...pageProps} />
         </div>
