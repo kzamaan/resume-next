@@ -356,7 +356,7 @@ export default function Resume() {
                             <div className='mr-4'>
                                 <div className='bullet'></div>
                             </div>
-                            <p>Familiarity with DevOps processes and tools (Docker).</p>
+                            <p>Familiarity with DevOps processes and tools (Docker, Kubernetes).</p>
                         </li>
                         <li className='flex items-center'>
                             <div className='mr-4'>
