@@ -2,20 +2,19 @@ version: "3.8"
 
 services:
     resume-app:
-        build:
-            context: .
-            dockerfile: Dockerfile
+        build: .
         container_name: resume-app
         ports:
             - "3000:3000"
         networks:
             - resume-network
         volumes:
-            - resume_data:/usr/share/resume/data
+            - ./:/app
+            # node_modules is not mounted as a volume because it is not needed in production
+            - /app/node_modules
+            - /app/.next
         environment:
             - APP_NAME=Resume App
 networks:
     resume-network:
         driver: bridge
-volumes:
-    resume_data:
