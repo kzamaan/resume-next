@@ -195,10 +195,10 @@ export default function Resume() {
                             <span className='gradient-content'>Node.js/Express</span>
                         </button>
                         <button className='gradient-btn group from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600'>
-                            <span className='gradient-content'>VueJS/Nuxt/Vuex</span>
+                            <span className='gradient-content'>VueJS/Vuex</span>
                         </button>
                         <button className='gradient-btn group from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500'>
-                            <span className='gradient-content'>React/Next/Redux</span>
+                            <span className='gradient-content'>React/Redux</span>
                         </button>
                     </div>
                     {/* Training */}
