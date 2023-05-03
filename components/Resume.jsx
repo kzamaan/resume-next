@@ -344,7 +344,7 @@ export default function Resume() {
                             <div className='mr-4'>
                                 <div className='bullet'></div>
                             </div>
-                            <p>HTML, CSS, Bootstrap, Tailwind CSS, Livewire and Alpine.js.</p>
+                            <p>HTML, CSS, Bootstrap, Tailwind CSS, Livewire, Alpine.js and MySQL</p>
                         </li>
                         <li className='flex items-center'>
                             <div className='mr-4'>
