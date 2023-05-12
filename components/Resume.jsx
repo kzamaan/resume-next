@@ -218,8 +218,8 @@ export default function Resume() {
                     <p className='subtitle'>Summary</p>
 
                     <p className='mb-6 mt-2 text-sm'>
-                        Over two years of experience building web applications, updating existing web applications, and
-                        fixing bugs. I like to learn and use new technology in web development. I have worked
+                        Over three years of experience building web applications, updating existing web applications,
+                        and fixing bugs. I like to learn and use new technology in web development. I have worked
                         extensively on various stages of application development by creating & implementing application
                         architecture, which includes various stages in development, code signing, and releasing to
                         Market and collaborative environments for the web platform.
@@ -289,7 +289,7 @@ export default function Resume() {
                         {/* last job Experience */}
                         <div className='grid grid-cols-5 gap-16'>
                             <div className='section-box col-span-2'>
-                                <p className='text-sm font-bold'>Aug 2020 – Jun 2021</p>
+                                <p className='text-sm font-bold'>May 2020 – Jun 2021</p>
                             </div>
                             <div className='col-span-3 flex flex-col justify-center text-xs'>
                                 <a href='https://maxsop.com' target='_blank' className='resume-link'>
