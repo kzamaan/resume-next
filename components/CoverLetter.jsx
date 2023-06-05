@@ -36,7 +36,7 @@ export default function CoverLetter() {
 
                     <p className='mt-8'>Thanks & Regards</p>
                     <p>Md. Kamruzzaman</p>
-                    <p>Software Engineer (Full Stack)</p>
+                    <p>Software Engineer</p>
                     <p className='italic'>Dhaka, Bangladesh</p>
                 </div>
             </div>
