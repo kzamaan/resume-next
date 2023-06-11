@@ -364,7 +364,7 @@ export default function Resume() {
 							<div className="mr-4">
 								<div className="bullet"></div>
 							</div>
-							<p>Knowledge of JIRA, Elasticsearch Linux or other Unix-based systems.</p>
+							<p>Knowledge of JIRA, Elasticsearch, Linux or Other Unix-based systems.</p>
 						</li>
 						<li className="flex items-center">
 							<div className="mr-4">
